@@ -12,6 +12,7 @@ Group:		Toys
 URL: http://www.enlightenment.org/
 Source: %{name}-%{version}.tar.bz2
 BuildRequires: edje-devel >= 0.5.0.038, ecore-devel >= 0.9.9.038
+Buildrequires: evas-devel >= 0.9.9.038, etk-devel >= 0.1.0.003
 Buildrequires: edje >= 0.5.0.038
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
@@ -38,5 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-, root, root)
-%doc AUTHORS ChangeLog COPYING* INSTALL README doc/*
+%doc AUTHORS COPYING* README TODO
 %{_bindir}/%{name}
+%{_datadir}/%name/data
