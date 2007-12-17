@@ -14,7 +14,6 @@ Source: %{name}-%{version}.tar.bz2
 BuildRequires: edje-devel >= 0.5.0.038, ecore-devel >= 0.9.9.038
 Buildrequires: evas-devel >= 0.9.9.038, etk-devel >= 0.1.0.003
 Buildrequires: edje >= 0.5.0.038
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 %description
 A simple viewer for edj files. Should provide more ease of use than the
