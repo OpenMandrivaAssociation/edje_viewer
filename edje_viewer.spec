@@ -9,6 +9,7 @@ Version:	%{version}
 Release:	%release
 License:	BSD
 Group:		Graphics
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.enlightenment.org/
 Source:		%{name}-%{cvs}.tar.bz2
 BuildRequires:	edje-devel edje
