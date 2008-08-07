@@ -1,7 +1,7 @@
 %define name edje_viewer
 %define version 0.0.1
 %define cvs	20080209
-%define release %mkrel %cvs.1
+%define release %mkrel %cvs.2
 
 Summary:	A simple viewer for edj files
 Name:		%{name}
