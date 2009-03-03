@@ -40,3 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS COPYING* README TODO
 %{_bindir}/%{name}
 %{_datadir}/%name/data
+%{_datadir}/applications/%name.desktop
+%{_datadir}/%name/%name.edj
+
