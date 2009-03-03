@@ -1,7 +1,7 @@
 %define name edje_viewer
 %define version 0.0.1
-%define cvs	20080209
-%define release %mkrel %cvs.2
+%define svn	20090227
+%define release %mkrel %svn.2
 
 Summary:	A simple viewer for edj files
 Name:		%{name}
@@ -11,10 +11,10 @@ License:	BSD
 Group:		Graphics
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.enlightenment.org/
-Source:		%{name}-%{cvs}.tar.bz2
-BuildRequires:	edje-devel edje
-BuildRequires:	ecore-devel
-Buildrequires:	evas-devel
+Source:		%{name}-%{version}.tar.bz2
+BuildRequires:	edje-devel >= 0.9.9.050, edje >= 0.9.9.050
+BuildRequires:	ecore-devel >= 0.9.9.050
+Buildrequires:	evas-devel >= 0.9.9.050
 BuildRequires:	etk-devel
 
 %description
