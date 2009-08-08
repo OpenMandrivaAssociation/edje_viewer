@@ -1,7 +1,7 @@
 %define name edje_viewer
-%define version 0.0.1
-%define svn	20090227
-%define release %mkrel %svn.3
+%define version 0.1.0
+%define svn	20090807
+%define release %mkrel 0.%svn.1
 
 Summary:	A simple viewer for edj files
 Name:		%{name}
@@ -15,22 +15,23 @@ Source:		%{name}-%{version}.tar.bz2
 BuildRequires:	edje-devel >= 0.9.9.050, edje >= 0.9.9.050
 BuildRequires:	ecore-devel >= 0.9.9.050
 Buildrequires:	evas-devel >= 0.9.9.050
-BuildRequires:	etk-devel
+BuildRequires:	elementary-devel
 
 %description
 A simple viewer for edj files. Should provide more ease of use than the
 edje viewer that comes with edje itself.
 
 %prep
-%setup -q -n %name-%version
+%setup -q -n %name
 
 %build
-./autogen.sh
+NOCONFIGURE=yes ./autogen.sh
 %configure2_5x
 %make
 
 %install
-%makeinstall
+rm -rf $RPM_BUILD_ROOT
+%makeinstall_std
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -39,7 +40,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-, root, root)
 %doc AUTHORS COPYING* README TODO
 %{_bindir}/%{name}
-%{_datadir}/%name/data
+%{_datadir}/%name
 %{_datadir}/applications/%name.desktop
-%{_datadir}/%name/%name.edj
-
