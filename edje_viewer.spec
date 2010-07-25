@@ -1,6 +1,6 @@
 %define name edje_viewer
 %define version 0.1.0
-%define svn	20090807
+%define svn	20100720
 %define release %mkrel 0.%svn.1
 
 Summary:	A simple viewer for edj files
@@ -22,7 +22,7 @@ A simple viewer for edj files. Should provide more ease of use than the
 edje viewer that comes with edje itself.
 
 %prep
-%setup -q -n %name
+%setup -q -n %name-%version
 
 %build
 NOCONFIGURE=yes ./autogen.sh
