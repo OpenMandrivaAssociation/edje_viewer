@@ -1,6 +1,6 @@
 %define name edje_viewer
 %define version 0.1.0
-%define svn	20100720
+%define svn	20101107
 %define release %mkrel 0.%svn.1
 
 Summary:	A simple viewer for edj files
