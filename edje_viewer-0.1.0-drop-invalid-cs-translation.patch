@@ -1,0 +1,10 @@
+--- data/edje_viewer.desktop.orig	2011-05-17 15:38:34.000000000 +0200
++++ data/edje_viewer.desktop	2011-05-17 15:38:40.000000000 +0200
+@@ -4,7 +4,6 @@
+ Name[fr]=Edje-Visio
+ Name[pt]=Visualizador Edje
+ Comment=A simple viewer for Edje files
+-Comment[cs]=Nástroj pro zobrazování edje souborù
+ Comment[eo]=Simpla rigardilo por Edje-dosieroj
+ Comment[it]=Un semplice visualizzatore di file edje
+ Comment[fr]=Simple visionneur de fichiers edj
