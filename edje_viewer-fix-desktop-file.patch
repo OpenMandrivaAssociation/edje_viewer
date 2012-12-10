@@ -1,0 +1,20 @@
+Index: edje_viewer/data/edje_viewer.desktop
+===================================================================
+--- edje_viewer/data/edje_viewer.desktop
++++ edje_viewer/data/edje_viewer.desktop	2012-05-09 13:19:06.101427738 -0400
+@@ -4,7 +4,7 @@
+ Name[fr]=Edje-Visio
+ Name[pt]=Visualizador Edje
+ Comment=A simple viewer for Edje files
+-Comment[cs]=Nástroj pro zobrazování edje souborù
++Comment[cs]=NÃ¡stroj pro zobrazovÃ¡nÃ­ edje souborÃ¹
+ Comment[eo]=Simpla rigardilo por Edje-dosieroj
+ Comment[it]=Un semplice visualizzatore di file edje
+ Comment[fr]=Simple visionneur de fichiers edj
+@@ -14,5 +14,4 @@
+ Type=Application
+ Icon=edje_viewer
+ StartupWMClass=Edje_viewer
+-Categories=ENLIGHTENMENT;Application;Development;
+-Encoding=UTF-8
++Categories=Graphics;Viewer;
