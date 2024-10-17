@@ -6,7 +6,7 @@ Version:	1.1.0
 Release:	0.%{svn}.1
 License:	BSD
 Group:		Graphical desktop/Enlightenment
-URL:		http://www.enlightenment.org/
+URL:		https://www.enlightenment.org/
 Source:		%{name}-%{version}.%{svn}.tar.xz
 Patch0:		edje_viewer-fix-desktop-file.patch
 BuildRequires:	edje
